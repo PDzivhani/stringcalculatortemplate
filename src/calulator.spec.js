@@ -8,3 +8,10 @@ describe("string calculator", function () {
         expect(calculatorResult).toBe(0);
     });
 });
+describe("string calculator", function () {
+    it("should return 1 number if string", function () {
+        let calculator = new Calculator();
+        let calculatorResult = calculator.add(4);
+        expect(calculatorResult).toBe(4);
+    });
+});
