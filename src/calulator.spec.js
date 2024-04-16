@@ -18,7 +18,7 @@ describe("string calculator", function () {
 describe("string calculator", function () {
     it("should return 2 numbers as string", function () {
         let calculator = new Calculator();
-        let calculatorResult = calculator.add("1,2");
-        expect(calculatorResult).toBe("1,2");
+        let calculatorResult = calculator.add(",");
+        expect(calculatorResult).toBe(",");
     });
 });

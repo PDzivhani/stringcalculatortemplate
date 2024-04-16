@@ -1,19 +1,20 @@
 class Calculator{
     add(numbers){
-        
         if(numbers == ""){
             return 0;
         }
 
         if(numbers == 1){
-            return parseInt(numbers)
+            return parseInt(numbers);
         }
 
-
-        if(numbers > numbers.split(",")){
-            return numbers[0].split(",")
+        let num = numbers.split(",")
+        for (let index = 0; index < numbers.length; index++) {
+            const element = parseInt.numbers[index];
+            return element += parseInt(num[2])
+            
         }
-
+        
     }
 }
 
