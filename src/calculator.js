@@ -1,5 +1,5 @@
-class Calculator{
-    add(numbers){
+
+   function add(numbers){
         if(numbers == ""){
             return 0;
         }
@@ -8,15 +8,24 @@ class Calculator{
             return parseInt(numbers)
         }
 
-        let num = numbers[2].split(",")
-        for (let index = 0; index < numbers.length; index++) {
-            const element = numbers[index];
+        for (let i = 0; i < numbers.length; index++) {
+            const element = numbers[i];
+            element += num.include(",")
+
+
             
         }
-        console.log(element += num)
-        
+
+        for(i = 0; i < 2; i++){
+            numbers[i].split(",")
+        }
         
     }
-}
+    add()
+    
+
+    
+
+
 
 module.exports = Calculator
