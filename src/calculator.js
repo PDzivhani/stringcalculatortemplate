@@ -3,17 +3,18 @@ class Calculator{
         if(numbers == ""){
             return 0;
         }
-
-        if(numbers == 1){
-            return parseInt(numbers);
+        
+        if(numbers == "1"){
+            return parseInt(numbers)
         }
 
-        let num = numbers.split(",")
+        let num = numbers[2].split(",")
         for (let index = 0; index < numbers.length; index++) {
-            const element = parseInt.numbers[index];
-            return element += parseInt(num[2])
+            const element = numbers[index];
             
         }
+        console.log(element += num)
+        
         
     }
 }
