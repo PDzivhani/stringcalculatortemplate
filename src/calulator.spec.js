@@ -11,14 +11,22 @@ describe("string calculator", function () {
 describe("string calculator", function () {
     it("should return 1 number as string", function () {
         let calculator = new Calculator();
-        let calculatorResult = calculator.add(1);
+        let calculatorResult = calculator.add("1");
         expect(calculatorResult).toBe(1);
     });
 });
 describe("string calculator", function () {
     it("should return 2 numbers as string", function () {
         let calculator = new Calculator();
-        let calculatorResult = calculator.add("1,9");
-        expect(calculatorResult).toBe(10);
+        let calculatorResult = calculator.add("1,5");
+        expect(calculatorResult).toBe(6);
+    });
+});
+
+describe("string calculator", function () {
+    it("should return 2 numbers as string", function () {
+        let calculator = new Calculator();
+        let calculatorResult = calculator.add("1,5,3");
+        expect(calculatorResult).toBe(9);
     });
 });
